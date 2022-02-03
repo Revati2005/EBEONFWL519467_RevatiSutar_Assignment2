@@ -1,0 +1,31 @@
+Question 3: Follow naming convention rule
+	
+	- Write a program to check if elements of an array are same or not it read from front or back. E.g.
+		 int[] a = {2,3,15,15,3,2};
+
+>>>Program :-
+
+	import java.util.Arrays;
+ 
+	public class SameElements {
+		public static boolean areSame(Integer arr[])
+  		 {
+       			Integer first = arr[0];
+       			for (int i=1; i<arr.length; i++)
+           			if (arr[i] != first)
+                	return false;
+       				return true;
+    		}
+
+		public static void main(String[] args)
+  		  {
+      			Integer[] arr = {2,3,15,15,3,2};
+        		if (areSame(arr))
+            			System.out.println("All Elements are Same");
+        		else
+            			System.out.println("Not all Elements are Same");
+    		  }
+	}
+
+
+>>>Output :- Not all Elements are Same

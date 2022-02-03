@@ -1,0 +1,99 @@
+Question 1: Follow naming convention rule
+ 
+	- Take 20 integer inputs from user and print the following:
+	- number of positive numbers
+	- number of negative numbers
+	- number of odd numbers
+	- number of even numbers
+	- number of 0s.
+
+>>>Program :- 
+
+import java.util.*;
+
+class NumberType{
+  public static void main(String[] args){
+    Scanner s = new Scanner(System.in);
+    int[] z = new int[20];
+    int pos = 0;
+    int neg = 0;
+    int odd = 0;
+    int even = 0;
+    int zero = 0;
+    for(int i = 0;i<z.length;i++){
+      System.out.println("Print the value of z["+i+"]");
+      z[i] = s.nextInt();
+
+      if(z[i]>0){
+        pos++;
+      }
+      else if(z[i]<0){
+        neg++;
+      }
+      else if(z[i]==0){
+        zero++;
+      }
+      if(z[i]%2==0){
+        even++;
+      }
+      else{
+        odd++;
+      }
+    }
+    System.out.println(" Number of Positive numbers : "+pos);
+    System.out.println("Number of Negative numbers : "+neg);
+    System.out.println(" Number of Zeros numbers : "+zero);
+    System.out.println(" Number of Even numbers : "+even);
+    System.out.println(" Number of Odd numbers : "+odd);
+
+  }
+}
+
+
+>>>Output :- 
+
+Print the value of z[0]
+1
+Print the value of z[1]
+2
+Print the value of z[2]
+3
+Print the value of z[3]
+4
+Print the value of z[4]
+5
+Print the value of z[5]
+6
+Print the value of z[6]
+-7
+Print the value of z[7]
+-8
+Print the value of z[8]
+0
+Print the value of z[9]
+9
+Print the value of z[10]
+10
+Print the value of z[11]
+22
+Print the value of z[12]
+-30
+Print the value of z[13]
+-99
+Print the value of z[14]
+41
+Print the value of z[15]
+52
+Print the value of z[16]
+-45
+Print the value of z[17]
+33
+Print the value of z[18]
+60
+Print the value of z[19]
+-40
+ Number of Positive numbers : 13
+Number of Negative numbers : 6
+ Number of Zeros numbers : 1
+ Number of Even numbers : 11
+ Number of Odd numbers : 9
